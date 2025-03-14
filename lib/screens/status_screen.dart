@@ -36,10 +36,9 @@ class _status_ScreenState extends State<status_Screen> {
              Column(
               mainAxisAlignment: MainAxisAlignment.center, 
                     children: [
-                    Text("Status: ${character.status}", style: TextStyle(fontSize: 20)),
-                    Text("Genêro: ${character.gender}", style: TextStyle(fontSize: 20)),
-                    Text("Especie: ${character.species}", style: TextStyle(fontSize: 20)),
-                    Text("Localização: ${character.locationName}", style: TextStyle(fontSize: 20)),
+                    Text("Tipo: ${character.type}", style: TextStyle(fontSize: 20)),
+                    Text("Número Pokedex: ${character.num}", style: TextStyle(fontSize: 20)),
+                    Text("Especie: ${character.name}", style: TextStyle(fontSize: 20)),
                     ]
                   ),
                ],

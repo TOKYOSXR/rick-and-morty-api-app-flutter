@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:rm_app/screens/status_screen.dart';
-import 'package:rm_app/services/rm_api_service.dart';
+import 'package:rm_app/services/pokemon_api.dart';
 import '../models/character.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -25,7 +25,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Rick and Morty'),
+        title: const Text('Pokemon APP'),
         centerTitle: true,
       ),
       body: FutureBuilder<List<Character>>(
@@ -68,7 +68,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             const Icon(Icons.error),
                       ),
                       title: Text(character.name),
-                      subtitle: Text('Status: ${character.status}'),
+                      subtitle: Text('Status: ${character.type}'),
                     )));
               },
             );

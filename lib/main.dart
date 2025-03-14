@@ -2,19 +2,19 @@ import 'package:flutter/material.dart';
 import 'screens/home_screen.dart';
 
 void main() {
-  runApp(const RickAndMortyApp());
+  runApp(const PokemonPokedex());
 }
 
-class RickAndMortyApp extends StatelessWidget {
-  const RickAndMortyApp({Key? key}) : super(key: key);
+class PokemonPokedex extends StatelessWidget {
+  const PokemonPokedex({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Rick and Morty',
+      title: 'Pokemon APP',
       theme: ThemeData(
-        primarySwatch: Colors.teal,
+        primarySwatch: Colors.red,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: const HomeScreen(),

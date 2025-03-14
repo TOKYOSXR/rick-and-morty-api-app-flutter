@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 import '../models/character.dart';
 
 class ApiService {
-  static const String baseUrl = 'https://rickandmortyapi.com/api';
+  static const String baseUrl = 'https://raw.githubusercontent.com/Biuni/PokemonGO-Pokedex/master/pokedex.json';
 
   Future<List<Character>> fetchCharacters() async {
     final response = await http.get(Uri.parse('$baseUrl/character'));

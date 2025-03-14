@@ -1,31 +1,28 @@
 class Character {
   final int id;
   final String name;
-  final String status;
+  final String num;
   final String image;
-  final String species;
-  final String gender;
-  final String locationName;
-
+  final String type;
+   
   Character({
     required this.id,
     required this.name,
-    required this.status,
+    required this.num,
     required this.image,
-    required this.species,
-    required this.gender,
-    required this.locationName,
+    required this.type
   });
 
-  factory Character.fromJson(Map<String, dynamic> json) {
+  factory Character.fromJson(Map<String,dynamic> json){
     return Character(
       id: json['id'],
       name: json['name'],
-      status: json['status'],
-      image: json['image'],
-      species: json['species'],
-      gender: json['gender'],
-      locationName: json['location']['name'],
+      num: json['num'],
+      image: json['img'],
+      type: json['type']
     );
   }
+
 }
+
+
